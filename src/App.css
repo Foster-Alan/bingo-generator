@@ -4,6 +4,13 @@
   font-family: Arial, sans-serif;
 }
 
+.card-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .generate-btn {
   padding: 10px 20px;
   margin-bottom: 20px;
@@ -24,22 +31,25 @@
 
 .card {
   width: 260px;
-  height: 260px;
   border: 3px solid #333;
   border-radius: 8px;
-  padding: 6px;
+  padding: 10px;
+  background: #fff;
+}
+
+.card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 6px;
-  background: #fff;
 }
 
 /* IMAGENS QUE NÃO QUEBRAM */
 .cell {
   width: 100%;
   aspect-ratio: 1/1;
-  overflow: hidden;
+  border: 2px solid #000; /* borda nas imagens */
   border-radius: 4px;
+  overflow: hidden;
   background: #fff;
   display: flex;
   align-items: center;
